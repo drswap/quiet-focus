@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Тихий фокус — спокойное цифровое пространство для людей с СДВГ: меньше перегрузки, один следующий шаг, мягкий фокус.">
+<title>Тихий фокус — меньше перегрузки, больше ясности</title>
+<style>
+:root{--bg:#f6f8f5;--surface:#fff;--ink:#20302a;--muted:#718079;--green:#4f806d;--green2:#dcece5;--lav:#eeeafa;--line:#e2e9e5;--shadow:0 22px 70px #213b3014}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 0 0,#dff0e8 0,transparent 28%),radial-gradient(circle at 100% 15%,#eee9fa 0,transparent 24%),var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 22px}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;font-weight:800}.mark{width:42px;height:42px;border-radius:14px;background:var(--green2);display:grid;place-items:center}.mark svg{width:27px}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navcta,.cta{background:var(--green);color:white;padding:12px 18px;border-radius:14px;font-weight:700;box-shadow:0 10px 28px #4f806d2c}
+.hero{padding:70px 0 55px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:99px;background:#fff;border:1px solid var(--line);color:var(--green);font-weight:700;font-size:13px}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-3px;margin:18px 0}.hero p{font-size:19px;color:var(--muted);max-width:610px}.actions{display:flex;gap:12px;margin:26px 0;flex-wrap:wrap}.ghost{padding:12px 18px;border:1px solid var(--line);background:#fff;border-radius:14px;font-weight:700}.proof{display:flex;gap:18px;color:var(--muted);font-size:13px;flex-wrap:wrap}.mock{background:#ffffffbd;border:1px solid #fff;border-radius:30px;padding:18px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}.mocktop{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:15px}.appcard{background:#f7faf8;border-radius:22px;padding:23px}.appcard h3{margin:0 0 5px}.small{font-size:13px;color:var(--muted)}.breath{height:150px;display:grid;place-items:center;margin:20px}.orb{width:92px;height:92px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#b8d8ca 55%,#76a991);box-shadow:0 0 0 15px #b8d8ca25,0 0 45px #76a99155;animation:breathe 8s ease-in-out infinite}@keyframes breathe{0%,100%{transform:scale(.82)}50%{transform:scale(1.22)}}.mockrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{padding:13px;background:#fff;border:1px solid var(--line);border-radius:15px}.mini b{display:block;font-size:13px}.mini span{font-size:12px;color:var(--muted)}
+.section{padding:65px 0}.sectionhead{text-align:center;max-width:680px;margin:0 auto 34px}.sectionhead h2{font-size:38px;letter-spacing:-1.5px;margin:0 0 8px}.sectionhead p{color:var(--muted)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature,.price{background:#ffffffc7;border:1px solid #fff;border-radius:24px;padding:25px;box-shadow:var(--shadow)}.icon{font-size:26px}.feature h3{margin:12px 0 6px}.feature p{color:var(--muted);font-size:14px}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;background:var(--surface);border-radius:22px;border:1px solid var(--line)}.num{color:var(--green);font-weight:900;font-size:13px}.step h3{margin:7px 0}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price{position:relative}.price.pop{border:2px solid #9bc4b3}.badge{position:absolute;right:18px;top:17px;padding:5px 8px;border-radius:99px;background:var(--green2);font-size:11px;color:#396452;font-weight:800}.price h3{margin:0}.cost{font-size:34px;font-weight:850;margin:14px 0}.cost small{font-size:13px;color:var(--muted);font-weight:500}.price ul{padding-left:20px;color:var(--muted);min-height:135px}.price li{margin:7px 0}.price a{display:block;text-align:center;padding:11px;border-radius:13px;background:#edf3f0;color:#416957;font-weight:750}.pop a{background:var(--green);color:#fff}
+.faq{max-width:760px;margin:auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px 18px;margin:9px 0}.faq summary{font-weight:750;cursor:pointer}.faq p{color:var(--muted);font-size:14px}
+.final{margin:55px 0 70px;background:linear-gradient(135deg,#e2f0ea,#eeeafa);border-radius:30px;padding:46px;text-align:center}.final h2{font-size:38px;margin:0 0 9px}.final p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.features,.how,.prices{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.final{padding:30px 20px}.final h2,.sectionhead h2{font-size:31px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+<a class="brand" href="#"><span class="mark"><svg viewBox="0 0 32 32" fill="none"><path d="M16 26V11M16 18c-6 0-9-3.2-9-8 5.8-.1 9 2.4 9 8Zm0 2c6 0 9-3.2 9-8-5.8-.1-9 2.4-9 8Z" stroke="#4f806d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Тихий фокус</a>
+<nav class="navlinks"><a href="#how">Как работает</a><a href="#features">Возможности</a><a href="#pricing">Тарифы</a></nav>
+<a class="navcta" href="#start">Попробовать</a>
+</header>
+
+<main>
+<section class="wrap hero" id="start">
+<div>
+<span class="eyebrow">Для моментов, когда всё слишком много</span>
+<h1>Меньше перегрузки.<br>Больше ясности.</h1>
+<p>«Тихий фокус» помогает людям с СДВГ перейти от хаоса к одному спокойному следующему шагу — без давления, сложных списков и чувства вины.</p>
+<div class="actions"><a class="cta" href="#pricing">Начать бесплатно</a><a class="ghost" href="#how">Посмотреть как это работает →</a></div>
+<div class="proof"><span>✓ дыхание</span><span>✓ мягкий фокус</span><span>✓ один следующий шаг</span></div>
+</div>
+<div class="mock">
+<div class="mocktop"><span>Тихий фокус</span><span>● Сейчас</span></div>
+<div class="appcard"><div class="small">Твоё состояние</div><h3>Давай сначала выдохнем.</h3><div class="breath"><div class="orb"></div></div><div style="text-align:center;font-weight:800">Вдох · 4 сек</div><p class="small" style="text-align:center">Не нужно делать идеально.</p><div class="mockrow"><div class="mini"><b>🎯 Следующий шаг</b><span>Открыть документ</span></div><div class="mini"><b>⏱ Фокус</b><span>05:00</span></div></div></div>
+</div>
+</section>
+
+<section class="section" id="features"><div class="wrap"><div class="sectionhead"><h2>Инструменты для реального момента</h2><p>Не пытаемся заставить человека быть продуктивным. Сначала помогаем снизить шум, потом — начать.</p></div>
+<div class="features">
+<div class="feature"><div class="icon">🌿</div><h3>Успокоиться</h3><p>Короткие дыхательные практики и спокойный интерфейс без лишних стимулов.</p></div>
+<div class="feature"><div class="icon">🎯</div><h3>Найти один шаг</h3><p>Вместо огромного списка — одно действие, которое достаточно сделать сейчас.</p></div>
+<div class="feature"><div class="icon">⏱️</div><h3>Войти в фокус</h3><p>5, 15 или 25 минут. Короткие сессии без ощущения, что ты подписался на марафон.</p></div>
+<div class="feature"><div class="icon">🧠</div><h3>Выгрузить мысли</h3><p>Отдельное пространство для мыслей, чтобы они перестали конкурировать за внимание.</p></div>
+<div class="feature"><div class="icon">🌙</div><h3>Низкая стимуляция</h3><p>Мягкие цвета, простая навигация и тёмная тема для спокойной работы вечером.</p></div>
+<div class="feature"><div class="icon">📈</div><h3>Понимать себя</h3><p>В Premium — история состояний и фокус-сессий, чтобы замечать собственные закономерности.</p></div>
+</div></div></section>
+
+<section class="section" id="how"><div class="wrap"><div class="sectionhead"><h2>Три шага вместо двадцати</h2><p>Сценарий продукта построен вокруг состояния человека, а не вокруг длинного списка задач.</p></div>
+<div class="how"><div class="step"><div class="num">01 · ЗАМЕТИТЬ</div><h3>«Как я сейчас?»</h3><p class="small">Спокойно, напряжённо, перегружен или готов к фокусу.</p></div><div class="step"><div class="num">02 · СТАБИЛИЗИРОВАТЬ</div><h3>«Что поможет?»</h3><p class="small">Дыхание, разгрузка мыслей или короткая пауза.</p></div><div class="step"><div class="num">03 · ДЕЙСТВОВАТЬ</div><h3>«Что следующее?»</h3><p class="small">Одно маленькое действие и короткая фокус-сессия.</p></div></div></div></section>
+
+<section class="section" id="pricing"><div class="wrap"><div class="sectionhead"><h2>Простая модель оплаты</h2><p>Цены — стартовая гипотеза для проверки спроса, а не окончательный прайс.</p></div>
+<div class="prices">
+<div class="price"><h3>Free</h3><div class="cost">€0 <small>/ навсегда</small></div><ul><li>Дыхание</li><li>5/15/25 минут фокуса</li><li>Один следующий шаг</li><li>Выгрузка мыслей</li></ul><a href="#start">Попробовать</a></div>
+<div class="price pop"><span class="badge">ПОПУЛЯРНЫЙ</span><h3>Calm+</h3><div class="cost">€7 <small>/ месяц</small></div><ul><li>Всё из Free</li><li>Персональные режимы</li><li>История состояний</li><li>Расширенные практики</li><li>Умные напоминания</li></ul><a href="#start">Начать тест</a></div>
+<div class="price"><h3>Lifetime</h3><div class="cost">€39 <small>/ один раз</small></div><ul><li>Все функции Calm+</li><li>Без ежемесячной оплаты</li><li>Ранний доступ к новым функциям</li><li>Поддержка продукта</li></ul><a href="#start">Купить доступ</a></div>
+</div></div></section>
+
+<section class="section"><div class="wrap"><div class="sectionhead"><h2>Вопросы</h2></div><div class="faq">
+<details><summary>Это лечение СДВГ?</summary><p>Нет. «Тихий фокус» задуман как инструмент саморегуляции, организации и фокусировки. Он не заменяет диагностику, лечение или рекомендации специалиста.</p></details>
+<details><summary>Нужно ли создавать аккаунт?</summary><p>Для базового MVP — нет. Локальные заметки можно хранить в браузере. Аккаунт понадобится для синхронизации и Premium-функций.</p></details>
+<details><summary>Что должно появиться в следующей версии?</summary><p>Онбординг, персональные сценарии, аккаунты, синхронизация, история сессий, мобильная версия и платёжная система.</p></details>
+</div></div></section>
+
+<section class="wrap final"><h2>Не делай всё сразу.</h2><p>Открой «Тихий фокус» и начни с одного маленького действия.</p><a class="cta" href="#start">Попробовать бесплатно</a></section>
+</main>
+
+<footer class="wrap"><span>© 2026 Тихий фокус</span><span>Инструмент самопомощи · Не медицинское устройство</span></footer>
+</body></html>
